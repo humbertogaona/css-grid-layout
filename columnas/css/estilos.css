@@ -10,6 +10,7 @@ body{
 
 .container{
     display: grid;
+    /* columnas */
     grid-template-columns: 33% 33% 33%;
 }
 

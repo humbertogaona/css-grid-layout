@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template:  140px 140px 140px 140px / 33% 33% 33%;
+}
+
+.item{
+    background: coral;
+    border: 1px solid black;
+}
+
+/* filas y columnas dentro de un contenedor (1)  */
+.item:nth-of-type(1) {
+    background: cyan;
+    overflow: auto;
+    display: grid;
+    grid-template: 50px 50px 50px 50px 50px / 50% 50%;
+}
+
+/* .item .item{
+    background: cornflowerblue;
+} */
