@@ -10,7 +10,7 @@ html{
 
 .container{
     display: grid;
-    grid-template: 150px 500px 80px / 30% 70%;
+    grid-template: 149px 500px 80px / 30% 70%;
     grid-template-areas: "header header" "left content" "footer footer";
     gap: 5px;
     justify-content: center;
