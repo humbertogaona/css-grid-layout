@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    /* Usamos nombres para las líneas con el propósito de hacer más fácil el entender la indicación que le damos al navegador. Por ejemplo: Le decimos que queremos que una columna me abarque desde el inicio hasta la linea 2, o que me abarque de la linea 2 al final.
+    Lo mismo hacemos con las filas.  */
+    display: grid;
+    grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr[linea4] 1fr[final];
+    grid-template-rows:[inicio] 100px [linea2] 250px [linea3] 250px [final];
+    gap: 1px;
+    padding: 5px;
+}
+
+.item:nth-of-type(1){
+    grid-column: inicio / final;
+}
+
+
+.item:nth-of-type(2){
+    grid-row: linea2 / final;
+}
+
+.item:nth-of-type(3){
+    grid-column: linea2/linea4;
+    grid-row: linea2/final;
+}
+
+.item{
+    background: cadetblue;
+}
