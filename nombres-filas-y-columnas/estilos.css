@@ -32,3 +32,10 @@
 .item{
     background: cadetblue;
 }
+
+.container .title{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+}
