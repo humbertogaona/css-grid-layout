@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* aquí alineamos el contenido que hay dentro de "container" al centro y al centro; es decir al centro del eje vertical y al centro del eje horizontal,para lograrlo es importante marcar la altura del "container" en 100vh */
+    display: grid;
+    grid-template: repeat(3,150px)/repeat(4,100px);
+    height: 100vh;
+    gap: 1px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item{
+    background: darkblue;
+    color: white;
+}
